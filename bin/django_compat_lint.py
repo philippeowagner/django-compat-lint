@@ -69,6 +69,8 @@ if __name__ == '__main__':
         else:
             files.append(path)
 
+        files += [path for path in os.listdir(os.getcwd()) if \
+                  (os.path.isfile(path) and '.pyc' not in path)]
     messages = []
     for filename in files:
         if options.verbose:

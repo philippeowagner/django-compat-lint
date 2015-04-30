@@ -8,4 +8,5 @@ setup(
     packages=find_packages(),
     include_package_data=True,
     scripts=['bin/django_compat_lint.py'],
+    version="0.0.1",
 )
